@@ -1,0 +1,11 @@
+index=main error
+index=main sourcetype=access_combined status=404
+index=main sourcetype="vendor_sales/vendor_sales"
+index=main sourcetype="www1/secure"
+index=main sourcetype=vendor_sales
+index=main sourcetype="access_combined_wcookie" Code = D OR Code = E | top VendorID
+index=main sourcetype="access_combined_wcookie" | stats count by categoryId
+index=main sourcetype="access_combined_wcookie" status !=200 | timechart count span=1h by categoryId
+index=main sourcetype="access_combined_wcookie" status !=200 | timechart count span=1
+index=main sourcetype="access_combined_wcookie" status !=200 | timechart count
+index=main sourcetype="access_combined_wcookie" status !=200
