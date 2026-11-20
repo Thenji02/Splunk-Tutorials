@@ -1,10 +1,18 @@
-index=main 
-sourcetype=access_combined status=404
-sourcetype="vendor_sales/vendor_sales"
-sourcetype="www1/secure"
-sourcetype="access_combined_wcookie"
-sourcetype="access_combined_wcookie"
-sourcetype="access_combined_wcookie" status !=200 | timechart count
-sourcetype="access_combined_wcookie" status !=200 | timechart count span=1h
-sourcetype="access_combined_wcookie" status !=200 | timechart count span=1h  by categoryId
-sourcetype="access_combined_wcookie" status !=200 | stats count by categoryId
+Splunk Commands and Concepts Learned
+- index: Specifies the index containing the events.
+- sourcetype: Filters data according to its source type or format.
+- index=main: Search for all events stored in the main index.
+- timechart: Creates time-based statistical charts.
+- count: Counts matching events.
+- stats: Calculates statistics from search results.
+- vertical bar (|) : Passes results from one search command to another.
+
+Basic Searches
+- sourcetype=access_combined status=404
+- sourcetype="vendor_sales/vendor_sales"
+- sourcetype="www1/secure"
+- sourcetype="access_combined_wcookie"
+- sourcetype="access_combined_wcookie"
+- sourcetype="access_combined_wcookie" status !=200 | timechart count
+- sourcetype="access_combined_wcookie" status !=200 | stats count by categoryId
+- 
