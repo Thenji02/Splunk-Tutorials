@@ -5,14 +5,17 @@ Splunk Commands and Concepts Learned
 - timechart: Creates time-based statistical charts.
 - count: Counts matching events.
 - stats: Calculates statistics from search results.
+- top: Identifies the most frequently occurring values in a specified field.
+- rare: Identifies the least frequently occurring values in a specified field.
 - vertical bar (|) : Passes results from one search command to another.
 
 Basic Searches
-- sourcetype=access_combined status=404
 - sourcetype="vendor_sales/vendor_sales"
 - sourcetype="www1/secure"
 - sourcetype="access_combined_wcookie"
-- sourcetype="access_combined_wcookie"
 - sourcetype="access_combined_wcookie" status !=200 | timechart count
 - sourcetype="access_combined_wcookie" status !=200 | stats count by categoryId
-- 
+- sourcetype="access_combined_wcookie" | table clientip action status| rename clientip as "Host Address", action as "Customer Action"
+- sourcetype="access_combined_wcookie" | table clientip action status| dedup status| sort -status
+- sourcetype="vendor_sales/vendor_sales" Code = D OR Code = E | top VendorID
+- index=main | rare limit=5 useragent
