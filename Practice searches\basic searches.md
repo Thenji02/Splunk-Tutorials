@@ -13,7 +13,7 @@
 # Basic Searches
 - sourcetype="vendor_sales/vendor_sales"
 - sourcetype="www1/secure"
-- sourcetype="access_combined_wcookie"
+- sourcetype="access_combined_wcookie
 - sourcetype="access_combined_wcookie" status !=200 | timechart count
 - sourcetype="access_combined_wcookie" status !=200 | stats count by categoryId
 - sourcetype="access_combined_wcookie" | table clientip action status| rename clientip as "Host Address", action as "Customer Action"
