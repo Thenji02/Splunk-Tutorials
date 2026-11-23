@@ -1,2 +1,3 @@
 # Dashboards created using Dashboard Studio
-<img width="1599" height="808" alt="Screenshot 2026-11-23 092627" src="https://github.com/user-attachments/assets/2bbdbe7e-6538-4aaf-95f6-8d824fbb8f5b" />
+<img width="1598" height="815" alt="dashboard" src="https://github.com/user-attachments/assets/78a71e60-4a6b-4655-808c-203053bc1442" />
+
