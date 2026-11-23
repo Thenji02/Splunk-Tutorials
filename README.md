@@ -10,6 +10,8 @@ This project documents my hands-on practice using Splunk Search Processing Langu
 - Practise Splunk SPL searches.
 - Analyze HTTP status codes.
 - Explore web access logs.
+- Extract fields using field extractor.
+- Build a dashboard in Dashboard Studio.
 - Perform statistical analysis.
 - Visualize event trends over time.
 - Develop foundational security monitoring skills.
