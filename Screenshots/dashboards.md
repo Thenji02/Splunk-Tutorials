@@ -1,1 +1,1 @@
-# Dashboard created using Dashboard Studio
+# Dashboards created using Dashboard Studio
